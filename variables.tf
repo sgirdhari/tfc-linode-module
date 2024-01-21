@@ -30,7 +30,7 @@ variable "label" {
 
 variable "tags" {
   description = "An optional list of tags"
-  type        = "list"
+  type        = list
   default     = []
 }
 
@@ -41,13 +41,13 @@ variable "type" {
 
 variable "authorized_keys" {
   description = "Your authorized keys. Be sure to chomp() it first"
-  type        = "list"
+  type        = list
   default     = []
 }
 
 variable "authorized_users" {
   description = "Your authorized users"
-  type        = "list"
+  type        = list
   default     = []
 }
 
@@ -58,6 +58,6 @@ variable "stackscript_id" {
 
 variable "stackscript_data" {
   description = "Optional map of StackScript UDF data."
-  type        = "map"
+  type        = map
   default     = {}
 }

@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    linode = {
+      source  = "linode/linode"
+      version = "~> 2.13.0" # specify the desired version constraint
+    }
+  }
+}
+
 resource "linode_instance" "instance" {
   tags             = "${var.tags}"
   label            = "${var.label}"

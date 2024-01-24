@@ -1,6 +1,6 @@
 output "public_ip" {
   description = "The public IP address for the Linode instance"
-  value       = "${linode_instance.instance.ip_address}"
+  value       = "${module.linode.ip_address}"
 }
 
 output "root_password" {

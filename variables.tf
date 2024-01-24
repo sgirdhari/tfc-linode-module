@@ -1,3 +1,8 @@
+variable "linode_token" {
+  description = "Linode API Token"
+  type        = string
+  sensitive   = true
+}
 variable "root_pass" {
   description = "The initial password for the root user account"
   default     = "changeME007.."

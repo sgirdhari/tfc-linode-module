@@ -4,8 +4,9 @@ variable "linode_token" {
   sensitive   = true
 }
 variable "root_pass" {
-  description = "The initial password for the root user account"
-  default     = "changeME007.."
+  description = "Root password for the Linode instance"
+  type        = string
+  sensitive   = true
 }
 
 variable "private_ip" {
